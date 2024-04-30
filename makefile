@@ -1,8 +1,7 @@
 CXX=g++
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror -pedantic -fsanitize=address -g
-LDFLAGS=-fsanitize=address -static-libasan
-SRCS=sha256.cpp
+CFLAGS=-Wall -Wextra -Werror -pedantic -fsanitize=leak -fsanitize=address -g
+LDFLAGS=-fsanitize=address -fsanitize=leak -static-libasan
+SRCS=sha256.cpp mac.cpp main.cpp
 OBJS=$(SRCS:.cpp=.o)
 NAME=kry
 

@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define nullptr ((void*)0)
-
 #define NBITS 32
 #define W 32
 #define MAX_VAR_VAL UINT32_MAX
